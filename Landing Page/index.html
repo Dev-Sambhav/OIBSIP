@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link rel="stylesheet" href="styles/util.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container max-w m-x min-h">
+      <!-- Header part -->
+      <header class="header flex justify-items align-items">
+        <nav>
+            <img src="images/bank.png" class="bank-logo" alt="logo">
+        </nav>
+        <ul class="flex .small-pad">
+            <li>Home</li>
+            <li>About</li>
+            <li>Offers</li>
+            <li>Contacts</li>
+            <div class="social-icon">
+              <i class="fa-brands fa-youtube fa-lg"></i>
+              <i class="fa-brands fa-facebook fa-lg"></i>
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+        </ul>
+      </header>
+      <!-- Main part -->
+      <main class="main max-w">
+        <img class="slide-img" src="https://picsum.photos/id/230/1000/550/?blur" alt="img">
+        <div class="card-container flex flex-direction">
+          <h1>
+            Find the best
+            <br>
+            best credit card for you
+          </h1>
+          <p>Whether you're looking for side-by-side comparisons,<br>info around rewards versus points or you're ready<br> to apply, we've gathered everything you<br> need in one easy place.</p>
+          <button class="btn btn-learn m-t-3">LEARN MORE</button>
+        </div>
+        <img class="slide-img" src="https://picsum.photos/id/231/1000/550/?blur" alt="img">
+        <img class="slide-img" src="https://picsum.photos/id/232/1000/550/?blur" alt="img">
+        <img class="slide-img" src="https://picsum.photos/id/233/1000/550/?blur" alt="img">
+        <img class="slide-img" src="https://picsum.photos/id/234/1000/550/?blur" alt="img">
+        <button class="btn btn-slide btn-prev" onclick="showPrev()"><i class="fa-solid fa-arrow-left fa-2xl"></i></button>
+        <button class="btn btn-slide btn-next" onclick="showNext()"><i class="fa-solid fa-arrow-right fa-2xl"></i></button>
+      </main>
+      <!-- Footer part -->
+      <footer class="footer">Footer</footer>
+    </div>
+    <script src="javascript/style.js"></script>
+    <script src="https://kit.fontawesome.com/016e15cd9a.js" crossorigin="anonymous"></script>
+  </body>
+</html>

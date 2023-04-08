@@ -1,0 +1,86 @@
+:root{
+    --text-primary : #194F82;
+    --background : #FFFFFF;
+    --btn : #00B4DA;
+    --shadow : rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --small-radius : 5px;
+}
+
+li{
+    margin: 0 10px;
+    margin-right: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* display */
+.flex{
+    display: flex;
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.justify-items{
+    justify-content: space-between;
+}
+
+.align-items{
+    align-items: center;
+}
+
+/* width and height */
+.max-w {
+    max-width: 100vw;
+}
+
+.min-h{
+    min-height: 100vh;
+}
+
+/* margin and padding */
+.m-t-1{
+    margin-top: 1rem;
+}
+.m-t-3{
+    margin-top: 3rem;
+}
+.m-x{
+    margin: 0 auto;
+}
+.small-margin{
+    margin: 0 5px;
+}
+.small-pad{
+    padding: 0 5px;
+}
+
+.pad-1{
+    padding: 0 1.5rem;
+}
+
+/* background */
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-gray{
+    background-color: gray;
+}
+
+/* button */
+.btn{
+    padding: 15px 20px;
+    background-color: var(--btn);
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+

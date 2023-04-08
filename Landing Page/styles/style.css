@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: var(--background);
+}
+
+.header{
+    background-color: var(--background);
+    padding: .5rem 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-primary);
+    border-radius: var(--small-radius);
+    box-shadow: var(--shadow);
+}
+
+.bank-logo{
+    width: 50px;
+}
+
+.social-icon{
+    margin-left: 2.5rem;
+}
+
+li{
+    font-weight: bold;
+}
+
+.fa-brands{
+    margin-left: 15px;
+}
+
+/* main section */
+main{
+    height:550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--small-radius);
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-img{
+    position: absolute;
+    transition: 1s;
+    width: 100%;
+    height: 550px;
+}
+
+
+/* buttons */
+.btn-slide{
+    position: absolute;
+    z-index: 11;
+    cursor: pointer;
+}
+.btn-prev{
+    left: 10px;
+    top: 240px;
+}
+.btn-next{
+    right: 10px;
+    top: 240px;
+}
+
+.btn-learn{
+    width: 11rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 3px solid var(--btn);
+}
+
+.card-container{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    z-index: 10;
+    padding: 3rem 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-container h1{
+    font-size: 4.6875rem;
+    line-height: 1.1em;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: var(--background);
+}
+
+
+br{
+    margin: 0;
+    padding: 0;
+}
+
+.card-container p{
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 0.68px;
+    color: var(--background);
+}
+
+
+
