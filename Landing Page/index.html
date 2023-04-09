@@ -11,11 +11,10 @@
   <body>
     <div class="container max-w m-x min-h">
       <!-- Header part -->
-      <header class="header flex justify-items align-items">
-        <nav>
-            <img src="images/bank.png" class="bank-logo" alt="logo">
-        </nav>
-        <ul class="flex .small-pad">
+      <header class="header">
+        <nav class="flex justify-items align-items">
+          <img src="images/bank.png" class="bank-logo" alt="logo" />
+          <ul class="nav-tabs flex .small-pad">
             <li>Home</li>
             <li>About</li>
             <li>Offers</li>
@@ -25,31 +24,172 @@
               <i class="fa-brands fa-facebook fa-lg"></i>
               <i class="fa-brands fa-instagram fa-lg"></i>
             </div>
-        </ul>
+          </ul>
+          <div class="mobile-navbar">
+            <i name="open-bar" class="fa-solid fa-bars fa-2xl mobile-icon"></i>
+            <i
+              name="close-bar"
+              class="fa-solid fa-xmark fa-2xl mobile-icon"
+            ></i>
+          </div>
+        </nav>
       </header>
       <!-- Main part -->
-      <main class="main max-w">
-        <img class="slide-img" src="https://picsum.photos/id/230/1000/550/?blur" alt="img">
-        <div class="card-container flex flex-direction">
-          <h1>
-            Find the best
-            <br>
-            best credit card for you
-          </h1>
-          <p>Whether you're looking for side-by-side comparisons,<br>info around rewards versus points or you're ready<br> to apply, we've gathered everything you<br> need in one easy place.</p>
-          <button class="btn btn-learn m-t-3">LEARN MORE</button>
-        </div>
-        <img class="slide-img" src="https://picsum.photos/id/231/1000/550/?blur" alt="img">
-        <img class="slide-img" src="https://picsum.photos/id/232/1000/550/?blur" alt="img">
-        <img class="slide-img" src="https://picsum.photos/id/233/1000/550/?blur" alt="img">
-        <img class="slide-img" src="https://picsum.photos/id/234/1000/550/?blur" alt="img">
-        <button class="btn btn-slide btn-prev" onclick="showPrev()"><i class="fa-solid fa-arrow-left fa-2xl"></i></button>
-        <button class="btn btn-slide btn-next" onclick="showNext()"><i class="fa-solid fa-arrow-right fa-2xl"></i></button>
+      <main class="max-w">
+        <!-- carousel section-->
+        <section class="carousel-section">
+          <div class="slide-img img-1">
+            <div class="slider-container flex flex-direction">
+              <h1>
+                Find the best
+                <br />
+                best credit card for you
+              </h1>
+              <p>
+                Whether you're looking for side-by-side comparisons,<br />info
+                around rewards versus points or you're ready<br />
+                to apply, we've gathered everything you<br />
+                need in one easy place.
+              </p>
+              <button class="btn btn-learn btn-bottom m-t-3">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="slide-img img-2">
+            <div class="slider-container flex flex-direction">
+              <h1>New!</h1>
+              <p>
+                Earn 50,000 bonus points<br />after spending $3,000<br />in the
+                first 5 months.
+              </p>
+              <button class="btn btn-learn btn-bottom m-t-3">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="slide-img img-3">
+            <div class="slider-container flex flex-direction">
+              <h1>All the benefits of Card,<br />on your phone</h1>
+              <p>Personalize your results in a few simple steps</p>
+              <button class="btn btn-learn btn-bottom m-t-3">LEARN MORE</button>
+            </div>
+          </div>
+          <button class="btn btn-slide btn-prev" onclick="showPrev()">
+            <i class="fa-solid fa-arrow-left fa-2xl"></i>
+          </button>
+          <button class="btn btn-slide btn-next" onclick="showNext()">
+            <i class="fa-solid fa-arrow-right fa-2xl"></i>
+          </button>
+        </section>
+        <!-- card-section -->
+        <section class="cards-section m-t-3">
+          <h1 class="title">Card Features and Benefits</h1>
+          <div class="cards-container m-t-1">
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-gift fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Rewards</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-plane fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Travel</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-chart-line fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Low Interest</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-retweet fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Balance Transfer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-money-bill-transfer fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Cash Bank</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+            <div class="card flex flex-direction justify-items align-items">
+              <div class="card-img">
+                <i class="fa-solid fa-hands-asl-interpreting fa-2xl"></i>
+              </div>
+              <div class="card-content">
+                <h3>Zero Percent</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  incidunt explicabo, ad quidem porro quaerat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- business section -->
+        <section class="business-section m-t-1">
+          <h1 class="title business-title">Business Banking</h1>
+          <div class="card-business flex">
+            <div class="card-left">
+              <img src="images/business-img.jpg" alt="img" />
+            </div>
+            <div class="card-right flex flex-direction">
+              <h2 class="title">
+                Nothing is impossible. We can help you achieve your goals!
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                expedita voluptas inventore cum mollitia corporis!
+              </p>
+              <button class="btn btn-learn btn-business">LEARN MORE</button>
+            </div>
+          </div>
+        </section>
       </main>
       <!-- Footer part -->
-      <footer class="footer">Footer</footer>
+      <footer class="footer-section m-t-3 flex flex-direction">
+        <p>Follow us</p>
+        <div class="social-icon">
+          <i class="icon fa-brands fa-youtube fa-xl"></i>
+          <i class="icon fa-brands fa-facebook fa-xl"></i>
+          <i class="icon fa-brands fa-instagram fa-xl"></i>
+        </div>
+      </footer>
     </div>
     <script src="javascript/style.js"></script>
-    <script src="https://kit.fontawesome.com/016e15cd9a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/016e15cd9a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
