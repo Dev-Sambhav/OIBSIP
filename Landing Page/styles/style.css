@@ -211,7 +211,7 @@ br {
   position: relative;
 }
 
-.card .card-content h3::after {
+/* .card .card-content h3::after {
   position: absolute;
   content: "";
   background-color: var(--btn);
@@ -220,7 +220,7 @@ br {
   top: 37px;
   left: 130px;
   margin-top: 5px;
-}
+} */
 
 .card .card-content p,
 .card-text {
@@ -268,7 +268,7 @@ br {
 .footer-section{
   font-family: "Poppins", sans-serif;
   background-color: var(--text-primary);
-  height: 18vh;
+  height: 15vh;
   justify-content: center;
   align-items: center;
 }
@@ -289,12 +289,9 @@ br {
   color: var(--background);
 }
 
-@media (min-width: 1024px){
+@media (min-width: 868px){
   .btn-bottom{
     bottom: 25px;
-  }
-  .card .card-content h3::after{
-    left: 91px;
   }
 }
 
@@ -347,9 +344,12 @@ br {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 604px) {
   .social-icon{
     display: none;
+  }
+  .footer-icon{
+    display: block;
   }
   .bank-logo{
     z-index: 1000;
