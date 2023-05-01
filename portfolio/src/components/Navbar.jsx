@@ -29,11 +29,11 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between  items-center w-full h-20 bg-[#0a192f] fixed text-white px-5">
     {/* title */}
-      <h1 className="logo pl-2 font-signature text-3xl text-cyan-600">Sam</h1>
+      <h1 className="logo pl-2 font-signature text-3xl font-Title text-cyan-600">Sam</h1>
       {/* nav-items */}
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
-          <li key={id} className="px-4 capitalize cursor-pointer font-medium text-white hover:scale-110 duration-200">
+          <li key={id} className="px-4 capitalize cursor-pointer font-medium text-white hover:scale-110">
             {link}
           </li>
         ))}
@@ -53,16 +53,16 @@ const Navbar = () => {
       </ul>
       )}
       {/* social icons */}
-      <div className="hidden sm:block flex flex-col fixed top-[35%] left-0">
+      <div className="hidden lg:flex flex-col fixed top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300">LinkedIn <FaLinkedin size={30}/></a>
+            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300 font-bold">LinkedIn <FaLinkedin size={30}/></a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300">Github <FaGithub size={30}/></a>
+            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300 font-bold">Github <FaGithub size={30}/></a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300">Facebook <FaFacebook size={30}/></a>
+            <a href="/" className="flex mx-4 justify-between items-center w-full text-gray-300 font-bold">Facebook <FaFacebook size={30}/></a>
           </li>
         </ul>
       </div>
